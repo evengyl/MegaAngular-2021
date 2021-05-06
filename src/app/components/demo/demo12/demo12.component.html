@@ -1,0 +1,51 @@
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col">
+			<div class="jumbotron jumbotron-fluid">
+				<div class="container">
+					<h1 class="display-4">Demo 12 : Les Promesses</h1>
+                    <p>
+                        (Injections de Dépendances)
+                    </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid">
+	<div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    Fake service avec promesse<br>
+                </div>
+                <div class="card-body">
+                    <button [ngClass]="fakePromise.status ? 'btn-success' : 'btn-danger'" class="btn btn-success" (click)="changeStatus()" >
+                        Change status pour les Pormesses {{ fakePromise.status }}
+                    </button><br><br>
+
+
+                    <button class='btn btn-info' (click)="simple()">Simple</button>&nbsp;
+                    <button class='btn btn-info' (click)="simple2()">Simple 2</button>&nbsp;
+                    <button class='btn btn-info' (click)="all()">All</button>&nbsp;
+                    <button class='btn btn-info' (click)="allSettled()">All Settled</button>&nbsp;
+                    <button class='btn btn-info' (click)="race()">Race</button>&nbsp;
+                    <button class='btn btn-info' (click)="any()">Any</button>&nbsp;
+                    <br>
+                    <p>Return du Simple : {{ fakePromise.messageSimple }}</p>
+                    <p>Return du Simple2 : {{ fakePromise.messageSimple2 }}</p>
+                    <p>Return du All : {{ fakePromise.messageAll }}</p>
+                    <p>Return du All Settled : {{ fakePromise.messageAllSettled }}</p>
+                    <p>Return du Race : {{ fakePromise.messageRace }}</p>
+                    <p>Return du Any : {{ fakePromise.messageAny }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<button (click)="login()">Login</button>
