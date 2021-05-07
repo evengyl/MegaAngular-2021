@@ -29,7 +29,6 @@ import { CustomPipe2Pipe } from './components/demo/demo6/custom-pipe2.pipe';
 import { ChildrenOutputComponent } from './components/demo/demo10/children-output/children-output.component';
 import { FakeAuthService } from './components/demo/demo11/services/fake-auth.service';
 import { FakePromiseService } from './components/demo/demo12/services/fake-promise.service';
-import { ThomasService } from './shared/thomas.service';
 
 @NgModule({
   declarations: [
@@ -67,7 +66,6 @@ import { ThomasService } from './shared/thomas.service';
   providers: [
     FakeAuthService,
     FakePromiseService,
-    ThomasService
   ],
   bootstrap: [AppComponent]
 })

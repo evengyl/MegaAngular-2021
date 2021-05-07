@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ThomasService } from 'src/app/shared/thomas.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,13 +6,9 @@ import { ThomasService } from 'src/app/shared/thomas.service';
 })
 export class NavbarComponent implements OnInit {
 
-  public status : boolean
-  constructor(public thom : ThomasService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.thom.stateSubject.subscribe(
-      (status) => { this.status = status }
-    )
   }
 
 }

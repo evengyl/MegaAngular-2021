@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ThomasService } from 'src/app/shared/thomas.service';
 import { FakePromiseService } from './services/fake-promise.service';
 
 @Component({
@@ -8,7 +7,7 @@ import { FakePromiseService } from './services/fake-promise.service';
 })
 export class Demo12Component implements OnInit {
 
-  constructor(public fakePromise : FakePromiseService, public thom : ThomasService) {
+  constructor(public fakePromise : FakePromiseService) {
   }
 
   ngOnInit(): void {
@@ -53,8 +52,4 @@ export class Demo12Component implements OnInit {
 
 
 
-  login()
-  {
-    this.thom.login()
-  }
 }
